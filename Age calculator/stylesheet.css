@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #192735;
+}
+.navbar{
+  
+    margin:20px;
+    padding:10px;
+    color: white;
+    background-color:teal;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navbar hover animation */
+.navbar:hover {
+    background-color: #115965;
+}
+.comp{
+    background-color:teal;
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.comp:hover{
+    color:red;
+}
+.head {
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 10px; /* Add padding for better readability */
+}
+.main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.grid1 {
+    
+    border-radius: 7%;
+    margin: auto;
+    margin-top: 90px;
+    width: 400px;
+    height: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 5px 10px aqua;
+}
+h1{
+    margin-top: 0px;
+    color:white;
+    padding: 20px;
+}
+.im {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-height: 100%; /* Maintain the aspect ratio of the image */
+    border-radius: 7%;
+}
+.grid2{
+    
+    padding: 50px;
+    width:400px;
+    margin:50px;
+    margin-top: 110px;
+    align-items: center;
+    border:2px solid transparent;
+    border-radius: 7%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 5px 10px aqua;
+}
+.inputDiv{
+    display: grid;
+    width: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+   
+}
+.child{
+    margin-right: 20px;
+   
+}
+input{
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255);
+    padding: 20px 15px;
+    width:100%;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    margin: auto;
+    background-color: #192735;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin: 50px;
+    border-radius: 25px;
+    border: 2px solid white;
+    width: 200px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+/* Button hover animation */
+button:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 5px 10px aqua;
+}
+
+.age{
+    color:antiquewhite;
+}
+/* Add a media query for smaller screens */
+@media screen and (max-width: 500px) {
+    .main {
+        grid-template-columns: 1fr; /* Change to a single column layout on smaller screens */
+    }
+}
